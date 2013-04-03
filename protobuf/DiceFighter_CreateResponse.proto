@@ -1,0 +1,9 @@
+import "DiceFighter_RetInfo.proto";
+import "DiceFighter_PlayerInfo.proto";
+package cn.senss.server.message;
+message  CreateResponse
+{
+	required uint32 result = 1;
+	required PlayerInfo player = 2;
+	required RetInfo ret = 3;//错误码
+}

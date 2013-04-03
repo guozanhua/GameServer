@@ -1,0 +1,18 @@
+//登录协议
+message PlayerInfo
+{
+	optional uint32 uin = 1; //玩家QQ号
+	optional uint32 role_id = 2; //一个服玩家可以创建多个角色，玩家所创建的角色Id
+	optional string name = 3;
+}
+
+message LoginRequest
+{
+	optional uint32 uin = 1;
+	optional uint32 role_id = 2; //玩家所创建的角色Id
+}
+
+message LoginResponse
+{
+	optional PlayerInfo player = 5;
+}

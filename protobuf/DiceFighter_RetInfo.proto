@@ -1,0 +1,6 @@
+package cn.senss.server.message;
+message RetInfo
+{
+	required uint32 error = 1; //错误码
+	required string errorStr = 2; //错误原因
+}

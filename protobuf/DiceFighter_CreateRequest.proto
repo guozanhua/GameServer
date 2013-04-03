@@ -1,0 +1,6 @@
+package cn.senss.server.message;
+message CreateRequest
+{
+	required uint32 uin = 1;
+	required uint32 role_id = 2;
+}

@@ -1,0 +1,7 @@
+package cn.senss.server.message;
+message PlayerInfo
+{
+	required uint32 uin = 1;//玩家QQ号
+	required uint32 role_id = 2; //一个服玩家可以创建多个角色，玩家所创建的角色Id
+	required string name = 3;
+}

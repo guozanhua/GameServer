@@ -1,0 +1,6 @@
+package cn.senss.server.message;
+message LoginRequest
+{
+	required uint32 uin = 1;
+	required uint32 role_id = 2; //玩家所创建的角色Id
+}

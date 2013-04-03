@@ -1,0 +1,9 @@
+import "DiceFighter_RetInfo.proto";
+import "DiceFighter_PlayerInfo.proto";
+package cn.senss.server.message;
+message LoginResponse
+{
+	required uint32 result = 1;
+	repeated PlayerInfo player = 2;
+	optional RetInfo ret = 3;//错误码
+}

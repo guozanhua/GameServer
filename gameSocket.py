@@ -103,7 +103,7 @@ class gameSocket(Protocol):
 			CRPobj.ret.errorStr='OK!'
 			CRPobjStr = CRPobj.SerializeToString()
 			
-			sendTemp = struct.pack(datafmt['1001'],len(CRPobjStr),1,0,1,srcStr[4],srcStr[5],1,toINT('113.106.90.136'))
+			sendTemp = struct.pack(datafmt['1001'],len(CRPobjStr),1,0,1,srcStr[4],srcStr[5],1,toINT('127.0.0.1'))
 			
 			self.transport.write(sendTemp+CRPobjStr)
 			
